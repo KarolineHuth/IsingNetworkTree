@@ -9,12 +9,6 @@
 ### C: False Positive: delta rho = 0 
 
 # -----------------------------------------------------------------------------------------
-
-#### STEP 0: Source Functions
-#source("~/Documents/Studium/Master_UniversityAmsterdam/Masterthesis/03_Programming/Ising_Fitting_MOB.R")
-#source("~/Documents/Studium/Master_UniversityAmsterdam/Masterthesis/03_Programming/Sources_Ising/B Ising - EMVS - Functions.R")
-
-# -----------------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------------
 
