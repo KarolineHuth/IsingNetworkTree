@@ -12,8 +12,8 @@
 # -----------------------------------------------------------------------------------------
 
 #### STEP 0: Source Functions
-source("~/Documents/Studium/Master_UniversityAmsterdam/Masterthesis/03_Programming/Ising_Fitting_MOB.R")
-source("~/Documents/Studium/Master_UniversityAmsterdam/Masterthesis/03_Programming/Sources_Ising/B Ising - EMVS - Functions.R")
+#source("~/Documents/Studium/Master_UniversityAmsterdam/Masterthesis/03_Programming/Ising_Fitting_MOB.R")
+#source("~/Documents/Studium/Master_UniversityAmsterdam/Masterthesis/03_Programming/Sources_Ising/B Ising - EMVS - Functions.R")
 
 # -----------------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ for(o in 1:length(obs)){
       # Run Ising MOB split function
       nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
       splitvars <- as.data.frame(data[, 1:n.zvar])
-      tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, 
+      tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, 
                                model = c("correlation"))
       
       # Extract result
@@ -117,7 +117,7 @@ for(o in 1:length(obs)){
       # Run Ising MOB split function
       nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
       splitvars <- as.data.frame(data[, 1:n.zvar])
-      tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars,
+      tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars,
                                model = c("correlation"))
       
       # Extract result
@@ -180,7 +180,7 @@ for(d in 1:length(cor)){
     # Run Ising MOB split function
     nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
     splitvars <- as.data.frame(data[, 1:n.zvar])
-    tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+    tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
     
     # Extract result
     res <- unlist(tree)
@@ -246,7 +246,7 @@ for(o in 1:length(obs)){
       # Run Ising MOB split function
       nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
       splitvars <- as.data.frame(data[, 1:n.zvar])
-      tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+      tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
       
       # Extract result
       res <- unlist(tree)
@@ -307,7 +307,7 @@ for(o in 1:length(obs)){
       # Run Ising MOB split function
       nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
       splitvars <- as.data.frame(data[, 1:n.zvar])
-      tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+      tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
       
       # Extract result
       res <- unlist(tree)
@@ -367,7 +367,7 @@ for(d in 1:length(cor)){
     # Run Ising MOB split function
     nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
     splitvars <- as.data.frame(data[, 1:n.zvar])
-    tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+    tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
     
     # Extract result
     res <- unlist(tree)
@@ -436,7 +436,7 @@ for(o in 1:length(obs)){
       # Run Ising MOB split function
       nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
       splitvars <- as.data.frame(data[, 1:n.zvar])
-      tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+      tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
       
       # Extract result
       res <- unlist(tree)
@@ -497,7 +497,7 @@ for(o in 1:length(obs)){
       # Run Ising MOB split function
       nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
       splitvars <- as.data.frame(data[, 1:n.zvar])
-      tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+      tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
       
       # Extract result
       res <- unlist(tree)
@@ -556,7 +556,7 @@ for(d in 1:length(cor)){
     # Run Ising MOB split function
     nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
     splitvars <- as.data.frame(data[, 1:n.zvar])
-    tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+    tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
     
     # Extract result
     res <- unlist(tree)
@@ -621,7 +621,7 @@ for(c in 1:length(obs)){
     # Run Ising MOB split function
     nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
     splitvars <- as.data.frame(data[, 1:n.zvar])
-    tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+    tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
     
     # Extract result
     res <- unlist(tree)
@@ -679,7 +679,7 @@ for(c in 1:length(obs)){
     # Run Ising MOB split function
     nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
     splitvars <- as.data.frame(data[, 1:n.zvar])
-    tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+    tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
     
     # Extract result
     res <- unlist(tree)
@@ -736,7 +736,7 @@ for (it in 1:sim){
   # Run Ising MOB split function
   nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
   splitvars <- as.data.frame(data[, 1:n.zvar])
-  tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
+  tree <- IsingNetworkTree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
   
   # Extract result
   res <- unlist(tree)
@@ -769,118 +769,3 @@ write.csv(BSimC,"BSimC.csv", row.names = FALSE)
 # -----------------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------------
 
-
-#### SIMULATION D: False Positive: delta rho = 0 & delta mu neq 0 
-
-
-
-# --------------------------------------------------------------------------------
-# --------------------------------------------------------------------------------
-# --------------------------------------------------------------------------------
-
-# Determine Simulation variables
-n.zvar <- 3
-n.nds <- 25
-n.obs <- 1000
-delta.all <- TRUE
-delta.cor <- 0.3
-mean.dif <- FALSE
-mean.change <- .6
-
-#Simualte Data
-data <- IsingDataSimulation(n.nds = n.nds, n.obs = n.obs, n.zvar = n.zvar, 
-                            delta.cor = delta.cor, delta.all = delta.all, 
-                            mean.dif = mean.dif, mean.change = mean.change, 
-                            part.type = "binary")
-
-# Run Ising MOB split function
-nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
-splitvars <- as.data.frame(data[, 1:n.zvar])
-
-start_time <- Sys.time()
-tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
-end_time <- Sys.time()
-end_time - start_time
-tree
-
-# Extract result
-res <- unlist(tree)
-if(is.null(res$node.kids.id)){
-  split <- "no"
-} else {
-  split <- "yes"
-}
-
-split
-
-
-
-
-
-
-
-
-
-
-
-
-## EXAMPLE PARSIM; However did not work properly
-ResultsA1 <- parSim(
-  # Any number of conditions:
-  n.obs = c(100),
-  n.nds = c(5),
-  delta.cor = c(0.1, 0.3, 0.5),
-  n.zvar = c(1), 
-  delta.all = c(FALSE),
-  mean.dif = c(FALSE),
-  mean.change = c( .6),
-  
-  # Number of repititions?
-  reps = 1, # more is better!
-  
-  # Parallel?
-  nCores = 2,
-  
-  # Write to file?
-  write = FALSE,
-  
-  # Export objects (only needed when nCores > 1):
-  export = c("split"),
-  
-  # R expression:
-  expression = {
-    # Load all R packages in the expression if needed
-    # library(...)
-    
-    # Want to debug? Enter browser() and run the function. Only works with nCores = 1!
-    # browser()
-    
-    # Enter whatever codes you want. I can use the conditions as objects.
-    data <- IsingDataSimulation(n.nds = n.nds, n.obs = n.obs, n.zvar = n.zvar, 
-                                delta.cor = delta.cor, delta.all = delta.all, 
-                                mean.dif = mean.dif, mean.change = mean.change)
-    nodevars <- as.data.frame(data[, (n.zvar + 1):(n.zvar + n.nds)])
-    splitvars <- as.data.frame(data[, 1:n.zvar])
-    
-    tree <- ISINGnetworktree(nodevars = nodevars, splitvars = splitvars, model = c("correlation"))
-    res <- unlist(tree)
-    
-    split <- res$node.kids.id
-    
-    # Make a data frame with one row to return results (multple rows is 
-    # also possible but not reccomended):
-    data.frame(
-      split = split
-    )
-  }
-)
-
-#- ----------------
-
-CSimB_s5 <- read.csv("CSimB_s5.csv")
-CSimB_s15 <- read.csv("CSimB_s15.csv")
-CSimB_s25 <- read.csv("CSimB_s25.csv")
-
-CSimB_s <- rbind(CSimB_s5, CSimB_s15, CSimB_s25)
-
-write_csv(CSimB_s[, -1], "CSimB_s.csv")
