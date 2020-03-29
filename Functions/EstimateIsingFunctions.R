@@ -1,3 +1,6 @@
+# Functions necessary for a computationally inexpensive Pseudolikelihood-Estimation
+# Credits for those functions to Maarten Marsman 
+
 one.dimensional.NR <- function(sigma.map, x, suf.stat, prior.variance) {
   p <- ncol(x)
 
