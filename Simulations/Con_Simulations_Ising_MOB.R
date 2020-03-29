@@ -7,7 +7,6 @@
 ### A - 2: Multiple delta rho changes (i.e., all interactions change)
 ### B: Single delta rho change & spurious partitioning variables (i.e., z.var > 1)
 ### C: False Positive: delta rho = 0 
-### D: False Positive: delta rho = 0 & delta mu neq 0
 
 # -----------------------------------------------------------------------------------------
 
